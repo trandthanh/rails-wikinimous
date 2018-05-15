@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row text-center">
+    <div class="col-sm-8 offset-sm-2">
+      <ul class="list-unstyled">
+        <% @articles.each do |a| %>
+            <%= link_to article_path(a) do %>
+            <h3><%= a.title %></h3>
+            <% end %>
+            <p><%= a.content %></p>
+        <% end  %>
+      </ul>
+    </div>
+  </div>
+</div>
